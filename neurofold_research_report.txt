@@ -1,0 +1,51 @@
+NEUROFOLD AI — PRELIMINARY MODEL REPORT
+================================================
+
+Purpose:
+Exploratory classification of peptide sequences using
+sequence-derived physicochemical features.
+
+IMPORTANT: Verify dataset provenance and label meaning
+before interpreting class 1 as biological aggregation.
+
+RANDOM 5-FOLD CROSS-VALIDATION
+-----------------------------------
+              Model  accuracy_mean  accuracy_std  balanced_accuracy_mean  balanced_accuracy_std  precision_mean  precision_std  recall_mean  recall_std  f1_mean   f1_std  roc_auc_mean  roc_auc_std
+Logistic Regression       0.781159      0.022657                0.785477               0.021053        0.663549       0.033023     0.800819    0.023334 0.725357 0.024637      0.856538     0.020351
+      Random Forest       0.814917      0.012344                0.804619               0.016018        0.732337       0.020269     0.767619    0.036036 0.748994 0.019763      0.882992     0.011192
+
+SIMILARITY-FILTERED HOLDOUT
+-----------------------------------
+              model  accuracy  balanced_accuracy  precision   recall       f1  roc_auc
+Logistic Regression  0.809249           0.767760   0.680000 0.666667 0.673267 0.834780
+      Random Forest  0.815029           0.760447   0.711111 0.627451 0.666667 0.814609
+
+This is one filtered holdout, not a definitive estimate.
+Its test-set composition differs from random CV.
+
+TOP RANDOM FOREST FEATURES
+-----------------------------------
+    random_forest_importance  random_forest_rank
+1                   0.256088                   1
+12                  0.112362                   2
+2                   0.091687                   3
+17                  0.080336                   4
+3                   0.052050                   5
+0                   0.034805                   6
+10                  0.034017                   7
+14                  0.030248                   8
+13                  0.029239                   9
+11                  0.029024                  10
+
+Feature importance describes model behavior, not causation.
+
+LIMITATIONS
+-----------------------------------
+1. Confirm the original dataset source and license.
+2. Verify what each class label represents.
+3. Similar sequences may lead to optimistic estimates.
+4. Feature importance does not establish causation.
+5. Predictions require independent experimental validation.
+6. This software is a research prototype, not a diagnostic tool.
+
+Report generated from existing project CSV files.

@@ -1,0 +1,27 @@
+NEUROFOLD AI - BATCH RESULTS QUALITY REPORT
+=============================================
+Total input rows: 5
+Successfully analyzed: 5
+Failed rows: 0
+Unique valid sequences: 5
+Repeated valid sequence rows: 0
+
+PREDICTION SCORE CATEGORIES
+------------------------------
+Low model score: 3
+High model score: 2
+
+PROBABILITY SUMMARY
+------------------------------
+Valid probabilities: 5
+Minimum: 0.0644
+Maximum: 0.9972
+Mean: 0.5098
+
+INTERPRETATION LIMITATIONS
+------------------------------
+This report checks output quality only.
+It does not establish model accuracy or biological validity.
+Score categories are provisional probability bands.
+Confirm dataset provenance and label meaning before
+interpreting predictions biologically.

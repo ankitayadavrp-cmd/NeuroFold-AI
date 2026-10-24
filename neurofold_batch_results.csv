@@ -1,0 +1,6 @@
+sequence,status,predicted_class,positive_class_probability,score_category,note
+AAAAAA,OK,0,0.2716,Low model score,Preliminary model output; not experimentally confirmed. Verify dataset label meaning before biological interpretation.
+VVVVVV,OK,1,0.9972,High model score,Preliminary model output; not experimentally confirmed. Verify dataset label meaning before biological interpretation.
+GSGSGS,OK,0,0.0644,Low model score,Preliminary model output; not experimentally confirmed. Verify dataset label meaning before biological interpretation.
+KLVFFA,OK,1,0.8792,High model score,Preliminary model output; not experimentally confirmed. Verify dataset label meaning before biological interpretation.
+ACDEFG,OK,0,0.3365,Low model score,Preliminary model output; not experimentally confirmed. Verify dataset label meaning before biological interpretation.
